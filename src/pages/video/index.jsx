@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom"
 import request from "../../service/request";
 
+import "./video.scss"
+
 const VideoPage = () => {
   const {videoId} = useParams();
   console.log(videoId);
@@ -26,9 +28,9 @@ const VideoPage = () => {
     getContent();
   } , [videoId])
   return (
-    <div className="container">
+    <div className="video-page">
       <div className="container">
-        <h1>VedioPage</h1>
+        <h1>VedioPage {videoId}</h1>
       </div>
     </div>
   )
