@@ -9,7 +9,7 @@ function App() {
       <Routes>
           <Route element={<Layout/>}>
             <Route index element={<HomePage/>} />
-            <Route path="video/:videoId" element={<VideoPage/>} />
+            <Route path="video/details/:videoId" element={<VideoPage/>} />
           </Route>
       </Routes>
     </BrowserRouter>

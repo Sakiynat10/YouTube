@@ -20,7 +20,7 @@ const ContentCard = ({
       </div>
       <div className="card-info">
         <div className="info-top">
-          <Link to={`/video/${video_id}`}>{title}</Link>
+          <Link to={`/video/details/${video_id}`}>{title}</Link>
           <p>
             {author} <FaCircleCheck />
           </p>
